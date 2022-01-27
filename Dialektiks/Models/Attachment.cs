@@ -4,7 +4,8 @@
     {
         public int Id { get; set; }
         public string filename { get; set; }
-        public int message_id { get; set; }
+        public int messageId { get; set; }
+        public Message message { get; set; }
         public int size { get; set; }
         public string url { get; set; }
         public int height { get; set; }

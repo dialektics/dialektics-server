@@ -23,7 +23,7 @@ namespace Dialektiks.Infrastructure
         {
             if (!optionsBuilder.IsConfigured)
             {
-                //fehlt ???
+                optionsBuilder.UseSqlite(@"Data Source=Dialektiks.db");
             }
         }
 

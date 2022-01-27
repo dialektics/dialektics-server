@@ -1,3 +1,5 @@
+
+/*
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -25,3 +27,12 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+*/
+
+using Dialektiks.Infrastructure;
+using Dialektiks.Services;
+
+SeedService db = new SeedService(new Context());
+db.DeleteDatabase();
+db.CreateDatabase();
+db.Seed();

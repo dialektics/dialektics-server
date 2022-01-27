@@ -11,6 +11,9 @@
         public Boolean verified {  get; set; }
         public Boolean disabled {  get; set; }
         public string email {  get; set; }
-        public JsonContent settings {  get; set; }
+        public string settings {  get; set; }
+
+        public List<GuildMember> guildmembership { get; set; }
+        public List<Guild> guilds { get; set; }
     }
 }
